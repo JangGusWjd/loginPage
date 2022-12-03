@@ -1,0 +1,60 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>LOGIN</h1>
+      <span>웹사이트 운영을 위한 관리자 모드입니다.</span>
+      <div id="login-container" class="hidden">
+        <form id="login-form">
+          <div class="id">
+            <img src="icon/id.svg" alt="id" />
+            <input
+              type="text"
+              id="user"
+              placeholder="ID"
+              maxlength="15"
+              required
+            />
+          </div>
+          <div class="password">
+            <img src="icon/password.svg" alt="pw" />
+            <input
+              type="password"
+              id="password"
+              placeholder="password"
+              required
+            />
+          </div>
+          <input type="submit" id="login-btn" value="로그인" />
+          <label
+            ><input type="checkbox" class="check" value="아이디 저장" />아이디
+            저장</label
+          >
+        </form>
+      </div>
+      <h1 class="hidden" id="login-pass"></h1>
+      <button class="hidden" id="logout-btn">로그아웃</button>
+    </div>
+    <footer>
+      <div class="address">
+        <img src="icon/monitor.svg" alt="monitor" />
+        <a href="www.naver.com">www.naver.com</a>
+      </div>
+      <div class="phone">
+        <img src="icon/phone.svg" alt="phone" />
+        <p>010-1234-5678</p>
+      </div>
+      <div class="email">
+        <img src="icon/email.svg" alt="email" />
+        <p>aaaa@gmail.com</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
